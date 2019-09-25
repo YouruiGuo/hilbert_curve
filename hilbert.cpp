@@ -1,10 +1,31 @@
 //
-//  main.cpp
-//  hilbert
+//  hilbert curve
 //
 //  Created by Yourui Guo on 2019-09-24.
 //  Copyright © 2019 Yourui Guo. All rights reserved.
 //
+/*
+ Originally from stackoverflow: Mapping N-dimensional value to a point on Hilbert curve
+ https://stackoverflow.com/questions/499166/mapping-n-dimensional-value-to-a-point-on-hilbert-curve
+ /// <summary>
+ /// Convert between Hilbert index and N-dimensional points.
+ ///
+ /// The Hilbert index is expressed as an array of transposed bits.
+ ///
+ /// Example: 5 bits for each of n=3 coordinates.
+ /// 15-bit Hilbert integer = A B C D E F G H I J K L M N O is stored
+ /// as its Transpose                        ^
+ /// X[0] = A D G J M                    X[2]|  7
+ /// X[1] = B E H K N        <------->       | /X[1]
+ /// X[2] = C F I L O                   axes |/
+ ///        high low                         0------> X[0]
+ ///
+ /// NOTE: This algorithm is derived from work done by John Skilling and published in "Programming the Hilbert curve".
+ /// (c) 2004 American Institute of Physics.
+ ///
+ /// </summary>
+ 
+ */
 
 #include <iostream>
 #include <stdio.h>
